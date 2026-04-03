@@ -1,5 +1,5 @@
 import java.util.Scanner;
-import java.util.InputMismatchException;
+
 
 public class Tugas1 {
     public static void main(String[] args) {
@@ -10,25 +10,9 @@ public class Tugas1 {
             System.out.print("Masukkan Nama: ");
             String nama = input.nextLine();
 
-            int usia = 0;
-            boolean inputBerhasil = false;
-
-            while (!inputBerhasil) {
-                try {
-                    System.out.print("Masukkan Umur: ");
-                    usia = input.nextInt();
-                    
-                    if (usia < 0) {
-                        System.out.println("Kesalahan: Umur tidak boleh negatif.");
-                    } else {
-                        inputBerhasil = true;
-                        input.nextLine(); 
-                    }
-                } catch (InputMismatchException e) {
-                    System.out.println("Kesalahan: Harap masukkan angka yang valid untuk umur.");
-                    input.next(); 
-                }
-            }
+           
+            System.out.print("Masukkan Umur: ");
+            int usia = input.nextInt();
 
             System.out.print("Masukkan Universitas: ");
             String universitas = input.nextLine();
