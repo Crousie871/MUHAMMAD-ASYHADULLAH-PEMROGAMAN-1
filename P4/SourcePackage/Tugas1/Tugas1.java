@@ -105,6 +105,25 @@ public class Tugas1 {
         System.out.println(" Makan = " + PersenMakan5 + "%");
         System.out.println(" Transport = " + PersenTransport5 + "%");
         System.out.println(" Belanja = " + PersenBelanja5 + "%");
+
+
+        double makan6, transport6, belanja6, total6, PersenMakan6, PersenTransport6, PersenBelanja6;
+        System.out.println(" Hari ke 6");
+        System.out.println(" Masukkan biaya makan:");
+        makan6 = input.nextDouble();
+        System.out.println(" Masukkan biaya transport:");
+        transport6 = input.nextDouble();
+        System.out.println(" Masukkan biaya belanja");
+        belanja6 = input.nextDouble();
+        total6 = makan6 + transport6 + belanja6;
+        PersenMakan6 = ( makan6 * 100) / total6;
+        PersenTransport6 = ( transport6 * 100 ) / total6;
+        PersenBelanja6 = ( belanja6 *100)/ total6;
+        System.out.println("\n Total" + total6);
+        System.out.println(" Presentase: ");
+        System.out.println(" Makan = " + PersenMakan6 + "%");
+        System.out.println(" Transport = " + PersenTransport6 + "%");
+        System.out.println(" Belanja = " + PersenBelanja6 + "%");
         
 
 
