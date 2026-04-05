@@ -74,7 +74,7 @@ public class Tugas1 {
         System.out.println(" Hari ke 4");
         System.out.println(" Masukkan biaya makan:");
         makan4 = input.nextDouble();    
-        system.out.println(" Masukkan biaya transport:");
+        System.out.println(" Masukkan biaya transport:");
         transport4 = input.nextDouble();
         System.out.println(" Masukkan biaya belanja");
         belanja4 = input.nextDouble();
@@ -125,7 +125,33 @@ public class Tugas1 {
         System.out.println(" Transport = " + PersenTransport6 + "%");
         System.out.println(" Belanja = " + PersenBelanja6 + "%");
         
+        double makan7, transport7, belanja7, total7, PersenMakan7, PersenTransport7, PersenBelanja7;
+        System.out.println(" Hari ke 7");
+        System.out.println(" Masukkan biaya makan:");
+        makan7 = input.nextDouble();
+        System.out.println(" Masukkan biaya transport:");
+        transport7 = input.nextDouble();
+        System.out.println(" Masukkan biaya belanja");
+        belanja7 = input.nextDouble();
+        total7 = makan7 + transport7 + belanja7;
+        PersenMakan7 = ( makan7 * 100) / total7;
+        PersenTransport7 = ( transport7 * 100 ) / total7;
+        PersenBelanja7 = ( belanja7 *100)/ total7;
+        System.out.println("\n Total" + total7);
+        System.out.println(" Presentase: ");
+        System.out.println(" Makan = " + PersenMakan7 + "%");
+        System.out.println(" Transport = " + PersenTransport7 + "%");
+        System.out.println(" Belanja = " + PersenBelanja7 + "%");
 
+        double totalMakan = makan + makan2 + makan3 + makan4 + makan5 + makan6 + makan7;
+        double totalTransport = transport + transport2 + transport3 + transport4 + transport5 + transport6 + transport7;
+        double totalBelanja = belanja + belanja2 + belanja3 + belanja4 + belanja5 + belanja6 + belanja7;
+        double totalPengeluaran = total + total2 + total3 + total4 + total5 + total6 + total7;
+
+        System.out.println("\n Total Pengeluaran Makan: " + totalMakan);
+        System.out.println(" Total Pengeluaran Transport: " + totalTransport);
+        System.out.println(" Total Pengeluaran Belanja: " + totalBelanja);
+        System.out.println(" Total Pengeluaran: " + totalPengeluaran);
 
      
     }
