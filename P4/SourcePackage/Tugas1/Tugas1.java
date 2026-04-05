@@ -90,6 +90,22 @@ public class Tugas1 {
 
         double makan5, transport5, belanja5, total5, PersenMakan5, PersenTransport5, PersenBelanja5;
         System.out.println(" Hari ke 5");
+        System.out.println(" Masukkan biaya makan:");
+        makan5 = input.nextDouble();
+        System.out.println(" Masukkan biaya transport:");   
+        transport5 = input.nextDouble();
+        System.out.println(" Masukkan biaya belanja");
+        belanja5 = input.nextDouble();
+        total5 = makan5 + transport5 + belanja5;
+        PersenMakan5 = ( makan5 * 100) / total5;
+        PersenTransport5 = ( transport5 * 100 ) / total5;
+        PersenBelanja5 = ( belanja5 *100)/ total5;
+        System.out.println("\n Total" + total5);
+        System.out.println(" Presentase: ");
+        System.out.println(" Makan = " + PersenMakan5 + "%");
+        System.out.println(" Transport = " + PersenTransport5 + "%");
+        System.out.println(" Belanja = " + PersenBelanja5 + "%");
+        
 
 
      
